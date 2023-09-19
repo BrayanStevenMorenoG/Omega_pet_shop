@@ -1,0 +1,7 @@
+.footer {
+    color: #fff; /* Cambia el color del texto del footer según tus preferencias */
+    padding: 20px; /* Espaciado interior del footer */
+    position: fixed; /* Fijar el footer */
+    bottom: 0; /* Colocar el footer en la parte inferior de la ventana */
+    width: 100%; /* Ancho completo */
+}

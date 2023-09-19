@@ -1,64 +1,258 @@
 {
-  "user": [
+  "usuario": [
     {
-      "id": 1,
-      "tipodoc": "Cedula de Ciudadanía",
+      "tipodoc": "Tarjeta de identidad",
       "numdoc": "1234567890",
-      "nombre": "Mario Alberto",
-      "apellido": "Yepes Caicedo",
-      "fnacimiento": "1982-06-25",
-      "email": "marioyepes@gmail.com",
-      "password": "qwery"
+      "nombre": "Laura",
+      "apellido": "Vega",
+      "direccion": "Cll 86 f #32 j 65",
+      "email": "LauraV@gmail.com",
+      "password": "123654",
+      "id": 1
     },
     {
-      "id": 2,
-      "tipodoc": "Pasaporte",
-      "numdoc": "198765432",
-      "nombre": "Laura María",
-      "apellido": "Esquerrea Cortés",
-      "fnacimiento": "1987-03-15",
-      "email": "lauraesguerra@gmail.com",
-      "password": "123456"
+      "tipodoc": "Tarjeta de identidad",
+      "numdoc": "1028480560",
+      "nombre": "Brayan",
+      "apellido": "Moreno",
+      "direccion": "Cll 78 a #23 n 45",
+      "email": "brayansm@gmail.com",
+      "password": "123456",
+      "id": 2
     }
   ],
-  "habitacion": [
+  "tienda": [
     {
-      "id": 101,
-      "nombrehab": "Suite Deluxe",
-      "capacidad": 3,
-      "camas": 2,
-      "caracteristicas": "2 camas 1 doble 1 sencilla, baño privado",
-      "valornoche": 125000
+      "nombre": "Animal's",
+      "direccion": "Calle 123, Ciudad",
+      "telefono": "123-456-7890",
+      "propietario": "Pepe Gonzales",
+      "password": "1245",
+      "id": 1
     },
     {
-      "id": 102,
-      "nombrehab": "Suite Basic",
-      "capacidad": 2,
-      "camas": 1,
-      "caracteristicas": "1 cama doble, baño privado",
-      "valornoche": 100000
+      "nombre": "Hu Mascotas",
+      "direccion": "Calle 456, Ciudad",
+      "telefono": "987-654-3210",
+      "propietario": "Maria Fonseca",
+      "password": "1245",
+      "id": 2
+    },
+    {
+      "nombre": "Mundo Animal",
+      "direccion": "Avenida 789, Ciudad",
+      "telefono": "555-123-4567",
+      "propietario": "Deivi Herrera",
+      "password": "1245",
+      "id": 3
+    },
+    {
+      "nombre": "Pet Paradise",
+      "direccion": "Calle 789, Ciudad",
+      "telefono": "321-987-6543",
+      "propietario": "Deyby Ariza",
+      "password": "1245",
+      "id": 4
     }
   ],
-  "reservas": [
+  "productos": [
     {
-      "id": 1,
-      "fechareserva": "2022-07-07",
-      "fechaentrada": "2022-08-22",
-      "fechasalida": "2022-08-26",
-      "totalnoches": 5,
-      "valorreserva": 625000,
-      "userId": 1,
-      "habitacionId": 101
+      "producto": "Croquetas Premium",
+      "descripcion": "Alimento para perros",
+      "precio": 25.99,
+      "tienda": 2,
+      "id": 1
     },
     {
-      "id": 2,
-      "fechareserva": "2022-04-07",
-      "fechaentrada": "2022-08-20",
-      "fechasalida": "2022-08-21",
-      "totalnoches": 2,
-      "valorreserva": 300000,
-      "userId": 2,
-      "habitacionId": 102
+      "producto": "Pelota de Goma",
+      "descripcion": "Juguete para perros",
+      "precio": 9.99,
+      "tienda": 1,
+      "id": 2
+    },
+    {
+      "producto": "Collar Reflectante",
+      "descripcion": "Collar para perros",
+      "precio": 12.99,
+      "tienda": 3,
+      "id": 3
+    },
+    {
+      "producto": "Cama Suave",
+      "descripcion": "Cama cómoda para mascotas",
+      "precio": 29.99,
+      "tienda": 3,
+      "id": 4
+    },
+    {
+      "producto": "Ratón de Juguete",
+      "descripcion": "Juguete para gatos",
+      "precio": 7.99,
+      "tienda": 4,
+      "id": 5
+    },
+    {
+      "producto": "Comida para Gatos",
+      "descripcion": "Alimento para gatos",
+      "precio": 19.99,
+      "tienda": 4,
+      "id": 6
+    },
+    {
+      "producto": "Comida para Gatos Premium",
+      "descripcion": "Alimento balanceado para gatos",
+      "precio": 19.99,
+      "tienda": 4,
+      "id": 7
+    },
+    {
+      "producto": "Correa Ajustable",
+      "descripcion": "Correa para perros ajustable",
+      "precio": 14.99,
+      "tienda": 1,
+      "id": 8
+    },
+    {
+      "producto": "Bola de Lana",
+      "descripcion": "Juguete para gatos",
+      "precio": 6.49,
+      "tienda": 3,
+      "id": 9
+    },
+    {
+      "producto": "Cocretas para perro",
+      "descripcion": "Cocretas saludades para cachorros",
+      "precio": "$15.55",
+      "tienda": 2,
+      "id": 10
+    },
+    {
+      "producto": "Raton de juguete",
+      "descripcion": "Juguete con forma de ratón",
+      "precio": "$8.05",
+      "tienda": 3,
+      "id": 11
+    }
+  ],
+  "pedido": [
+    {
+      "cliente": 1,
+      "producto": 8,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 6.49,
+      "id": 1
+    },
+    {
+      "cliente": 2,
+      "producto": 3,
+      "direccion": "Cll 78 a #23 n 45",
+      "total": 12.99,
+      "id": 2
+    },
+    {
+      "cliente": 1,
+      "producto": 7,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 14.99,
+      "id": 3
+    },
+    {
+      "cliente": 1,
+      "producto": 1,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 25.99,
+      "id": 4
+    },
+    {
+      "cliente": 2,
+      "producto": 5,
+      "direccion": "Cll 78 a #23 n 45",
+      "total": 7.99,
+      "id": 5
+    },
+    {
+      "cliente": 1,
+      "producto": "Croquetas Premium",
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 25.99,
+      "id": 6
+    },
+    {
+      "cliente": 1,
+      "producto": "Croquetas Premium",
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 25.99,
+      "id": 7
+    },
+    {
+      "cliente": 2,
+      "producto": "Pelota de Goma",
+      "direccion": "Cll 78 a #23 n 45",
+      "total": 9.99,
+      "id": 8
+    },
+    {
+      "cliente": 1,
+      "producto": "Croquetas Premium",
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 25.99,
+      "id": 9
+    },
+    {
+      "cliente": 1,
+      "producto": 5,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 7.99,
+      "id": 10
+    },
+    {
+      "cliente": 1,
+      "producto": 7,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 19.99,
+      "id": 11
+    },
+    {
+      "cliente": 1,
+      "producto": 2,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 9.99,
+      "id": 12
+    },
+    {
+      "cliente": 1,
+      "producto": 2,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 9.99,
+      "id": 13
+    },
+    {
+      "cliente": 1,
+      "producto": 5,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 7.99,
+      "id": 14
+    },
+    {
+      "cliente": 2,
+      "producto": 4,
+      "direccion": "Cll 78 a #23 n 45",
+      "total": 29.99,
+      "id": 15
+    },
+    {
+      "cliente": 1,
+      "producto": 3,
+      "direccion": "Cll 86 f #32 j 65",
+      "total": 12.99,
+      "id": 16
+    },
+    {
+      "cliente": 2,
+      "producto": 2,
+      "direccion": "Cll 78 a #23 n 45",
+      "total": 9.99,
+      "id": 17
     }
   ]
 }

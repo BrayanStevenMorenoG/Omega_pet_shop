@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-function Edit() {
+function EditUsu() {
     const {id} = useParams();
 
     const [data, setData] = useState([]);
@@ -10,17 +10,17 @@ function Edit() {
     const navigate = useNavigate();
 
     useEffect(()=> {
-        axios.get('http://localhost:5000/user/'+id)
+        axios.get('http://localhost:5000/usuario/'+id)
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
 
     function handleSubmit(event){
         event.preventDefault()
-        axios.put('http://localhost:5000/user/'+id, data)
+        axios.put('http://localhost:5000/usuario/'+id, data)
         .then(res => {
             alert("Información actualizada!")
-            navigate('/')
+            navigate('/listUsu')
         })
     }
 
@@ -29,8 +29,8 @@ function Edit() {
         <div className='w-50 border bg-light p-5'>
             <form onSubmit={handleSubmit}>
             <div>
-                <label htmlFor='tipodoc'>id</label>
-                <input type='text' disabled name='tipodoc' value={data.id} className='form-control'
+                <label htmlFor='id'>id</label>
+                <input type='text' disabled name='id' value={data.id} className='form-control'
                 />
             </div>
             <div>
@@ -54,9 +54,9 @@ function Edit() {
                 onChange={e => setData({...data, apellido: e.target.value})}/>
             </div>
             <div>
-                <label htmlFor='fnacimiento'>Fecha Nacimiento</label>
-                <input type='text' name='fnacimiento' value={data.fnacimiento} className='form-control'
-                onChange={e => setData({...data, fnacimiento: e.target.value})}/>
+                <label htmlFor='direccion'>Direccion</label>
+                <input type='text' name='direccion' value={data.direccion} className='form-control'
+                onChange={e => setData({...data, direccion: e.target.value})}/>
             </div>
             <div>
                 <label htmlFor='email'>Email</label>
@@ -76,4 +76,4 @@ function Edit() {
   )
 }
 
-export default Edit
+export default EditUsu
